@@ -3,6 +3,7 @@ import axios from "axios";
 //import bluebg from "../bluebg.png";
 //import { Link } from "react-router-dom";
 import equal3 from "../equal3.jpg";
+import { Link } from "react-router-dom";
 import "./SignUp.css";
 import eq2 from "../eq2.png";
 
@@ -39,7 +40,7 @@ class SignUp extends React.Component {
   render() {
     return (
       <div className="back" style={{ backgroundColor: "#002D62" }}>
-        <div className="container">
+        <div className="ui container">
           <h1
             style={{
               textAlign: "center",
@@ -69,7 +70,7 @@ class SignUp extends React.Component {
           <br />
           <div className="ui form">
             <div className="six wide field">
-              <label>Email</label>
+              <label style={{color:"yellow",fontSize:"22px"}}>Email</label>
               <input
                 type="text"
                 placeholder="abc@gmail.com"
@@ -78,9 +79,11 @@ class SignUp extends React.Component {
                 autoComplete="email"
                 onChange={(e) => this.setState({ email: e.target.value })}
               />
+              <br/>
             </div>
             <div className="six wide field">
-              <label>Password</label>
+            <br/>
+              <label style={{color:"yellow",fontSize:"22px"}}>Password</label>
               <input
                 name="password"
                 label="Password"
@@ -89,16 +92,17 @@ class SignUp extends React.Component {
                 autoComplete="current-password"
                 onChange={(e) => this.setState({ password: e.target.value })}
               />
+              <br/>
             </div>
             <div className="field">
               <div className="ui checkbox">
                 <input type="checkbox" tabIndex="0" className="hidden" />
-                <label>I agree to the Terms and Conditions</label>
+                <label style={{color:"white"}}>I agree to the Terms and Conditions</label>
               </div>
             </div>
-
+            <br/>
             <button
-              className="large ui black button"
+              className="large ui active button"
               variant="contained"
               onClick={this.handleSignUp}
             >
@@ -106,6 +110,17 @@ class SignUp extends React.Component {
               Sign Up
             </button>
           </div>
+          <br/>
+          <h3 style={{color:"white"}}> Already have an account? </h3>
+          <button
+            className="large ui active button"
+            variant="contained"
+
+          >
+
+            <Link to ="/signin">Sign In</Link>
+          </button>
+
         </div>
       </div>
     );

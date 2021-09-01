@@ -1,5 +1,6 @@
 import React from "react";
 //import AuthApi from "../utils/AuthApi";
+import bck from "../equal10.jpg"
 import pic1 from "../pic1.png";
 import pic2 from "../pic2.jpg";
 import pic3 from "../pic3.png";
@@ -21,30 +22,35 @@ class DashBoard extends React.Component {
           <h3 class="ui left floated header">Girlspace</h3>
         </div>
 
+
+
+
         <div
-          style={{
-            height: "60vh",
-            backgroundColor: "#ffd500",
-            padding: "10px",
-          }}
-        >
+            className="image"
+            style={{ backgroundImage: `url(${bck})`,padding:"20px"}}
+
+          >
           <br />
           <br />
-          <h1 style={{ fontSize: "70px", fontWeight: "800" }}>GIRLSPACE</h1>
-          <p>
-            This is a simple hero unit, a simple jumbotron-style component for
-            calling extra attention to featured content or information.
+          <br />
+
+          <br />
+          <br />
+          <h1 style={{ fontSize: "75px", fontWeight: "800" }}>GIRLSPACE</h1>
+          <p style={{color:"yellow",fontSize:"25px"}}>
+          <span style={{backgroundColor:"black"}}>  Let's grow together and build a community we are proud of.</span>
           </p>
-          <p>
+
             <Link to="/getupdates" className="big ui button primary">
               See Latest!
             </Link>
-          </p>
+
         </div>
         <br />
         <br />
+        <br/>
 
-        <div>
+        <div className="ui container">
           <div class="ui three column grid">
             <div class="column">
               <div class="ui fluid card">

@@ -38,18 +38,18 @@ class UpdateList extends React.Component {
           key={item._id}
           style={{
             border: "1px solid black",
-            backgroundColor: "#ffd500",
+            backgroundColor: "#AAF0D1",
             margin: "10px",
             padding: "10px",
           }}
         >
           <div className="content">
             <div className="description">
-              <i class="calendar alternate outline icon"></i>
+              <i class="large calendar alternate outline icon"></i>
               <h3 style={{ color: "black" }}>{item.name}</h3>
-              <br />
+
               <h5>Start Date :</h5> {item.startDate}
-              <br />
+
               <h5>End Date :</h5> {item.endDate}
               <br />
             </div>
@@ -62,14 +62,16 @@ class UpdateList extends React.Component {
   render() {
     //  console.log(this.props);
     return (
-      <div className="back" style={{ backgroundImage: `url(${eq2})` }}>
+      <div className="back" style={{ backgroundColor:"#2554C7" }}>
         <div className="container">
           <h1
             style={{ textAlign: "center", fontSize: "50px", fontWeight: "900" }}
           >
             Update list
           </h1>
-          <div>{this.renderItems()}</div>
+          <div >{this.renderItems()}
+          <br/>
+          <br/></div>
         </div>
       </div>
     );

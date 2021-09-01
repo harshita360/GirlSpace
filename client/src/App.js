@@ -7,6 +7,7 @@ import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import history from "./history";
 import UpdateList from "./components/UpdateList";
+//import Footer from "./components/Footer";
 //import Dummy from "./components/Dummy";
 const App = () => {
   return (
@@ -19,6 +20,10 @@ const App = () => {
           <Route exact path="/getupdates" component={UpdateList} />
         </div>
       </Router>
+      <br/>
+      <br/>
+
+  
     </div>
   );
 };
