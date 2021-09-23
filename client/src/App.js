@@ -7,6 +7,7 @@ import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import history from "./history";
 import UpdateList from "./components/UpdateList";
+import Email from "./components/Email";
 //import Footer from "./components/Footer";
 //import Dummy from "./components/Dummy";
 const App = () => {
@@ -18,12 +19,12 @@ const App = () => {
           <Route exact path="/" component={SignUp} />
           <Route exact path="/signin" component={SignIn} />
           <Route exact path="/getupdates" component={UpdateList} />
+          <Route exact path="/email" component={Email}/>
         </div>
       </Router>
-      <br/>
-      <br/>
 
-  
+
+
     </div>
   );
 };

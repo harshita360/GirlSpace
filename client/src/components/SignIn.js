@@ -39,7 +39,7 @@ class SignIn extends React.Component {
   render() {
     return (
       <div className="back" style={{ backgroundImage: `url(${bg1})` }}>
-        <div className="container">
+        <div className=" ui container">
           <h1
             style={{
               textAlign: "center",
@@ -71,7 +71,7 @@ class SignIn extends React.Component {
           <div className="ui form">
             <div className="six wide ui field">
               <label>
-                <h2 style={{ fontWeight: "700" }}>Email</h2>
+                <h1 style={{ fontWeight: "800" }}>Email</h1>
               </label>
 
               <input
@@ -85,7 +85,7 @@ class SignIn extends React.Component {
               />
             </div>
             <label>
-              <h2 style={{ fontWeight: "700" }}>Password</h2>
+              <h1 style={{ fontWeight: "800" }}>Password</h1>
             </label>
 
             <div className="six wide ui field">
